@@ -11,7 +11,6 @@ const validations = [nameValidation,emailValidation,passwordValildation,cpasswor
 
 button.addEventListener("click",(e) => {
     if(!validateForm()){
-        window.alert("Invalid User Incredentials")
         e.preventDefault()
     }     
 })

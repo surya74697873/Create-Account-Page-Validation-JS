@@ -25,8 +25,7 @@ body {
 }
 #container h1 {
   font-family: "Bebas Neue";
-  letter-spacing: 2px;
-  font-stretch: 20px;
+  letter-spacing: 5px;
   text-align: center;
   font-size: 2rem;
 }
@@ -37,12 +36,14 @@ body {
 }
 #container .input-groups label {
   font-size: 1rem;
+  font-weight: bold;
 }
 #container input {
   font-size: 16px;
   outline: none;
   padding: 0.7rem;
   border-radius: 10px;
+  border: 0.5px solid;
 }
 #container .error {
   color: red;
@@ -53,7 +54,7 @@ body {
 #container button {
   margin-top: 10px;
   width: 100%;
-  padding: 10px 20px;
+  padding: 15px 20px;
   font-size: 1rem;
   font-weight: bold;
   background-color: rgba(80, 111, 238, 0.8);
