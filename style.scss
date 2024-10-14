@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "Kanit", sans-serif;;
+    src: url('./Kanit/Kanit-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('./Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+}
+
+body{
+    font-family: kanit, sans-serif;
+    background: rgb(63,94,251);background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background-attachment: fixed;
+}
+
+#container{
+    border-radius: 20px;
+    width: 350px;
+    padding: 40px;
+    background-color: rgb(240,240,243);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    h1{
+        font-family: "Bebas Neue";
+        letter-spacing: 2px;
+        font-stretch: 20px;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .input-groups{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        label{
+            font-size: 1rem;
+        }
+    }
+
+    input{
+        font-size: 16px;
+        outline: none;
+        padding: 0.7rem;
+        border-radius: 10px;
+    }
+
+    .error{
+        color: red;
+    }
+
+    .success{
+        color: green;
+    }
+
+    button{
+        margin-top: 10px;
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        background-color:rgb(80,111,238,0.8);
+        border-radius: 20px;
+        border: none;
+    }
+
+
+}

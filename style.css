@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Kanit", sans-serif;
+  src: url("./Kanit/Kanit-Black.ttf");
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("./Bebas_Neue/BebasNeue-Regular.ttf") format("truetype");
+}
+body {
+  font-family: kanit, sans-serif;
+  background: rgb(63, 94, 251);
+  background: linear-gradient(90deg, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
+  background-attachment: fixed;
+}
+
+#container {
+  border-radius: 20px;
+  width: 350px;
+  padding: 40px;
+  background-color: rgb(240, 240, 243);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#container h1 {
+  font-family: "Bebas Neue";
+  letter-spacing: 2px;
+  font-stretch: 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+#container .input-groups {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+#container .input-groups label {
+  font-size: 1rem;
+}
+#container input {
+  font-size: 16px;
+  outline: none;
+  padding: 0.7rem;
+  border-radius: 10px;
+}
+#container .error {
+  color: red;
+}
+#container .success {
+  color: green;
+}
+#container button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgba(80, 111, 238, 0.8);
+  border-radius: 20px;
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */
