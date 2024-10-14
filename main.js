@@ -10,8 +10,10 @@ const inputs = [username,email,password,cpassword]
 const validations = [nameValidation,emailValidation,passwordValildation,cpasswordValidation]
 
 button.addEventListener("click",(e) => {
-    if(!validateForm())
+    if(!validateForm()){
+        window.alert("Invalid User Incredentials")
         e.preventDefault()
+    }     
 })
 
 inputs.map((input, index) => {
@@ -92,11 +94,17 @@ function cpasswordValidation(){
 function validateForm(){
     let flag = true
 
-    if(!nameValidation() || !emailValidation() || !passwordValildation() || !cpasswordValidation())
+    if(!nameValidation())
         flag = false
-    else
-        flag = true
 
+    if(!emailValidation())
+        flag = false
+
+    if(!passwordValildation())
+        flag = false
+
+    if(!cpasswordValidation())
+        flag = false
 
     return flag
 }
